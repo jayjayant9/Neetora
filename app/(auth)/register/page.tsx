@@ -118,7 +118,7 @@ function RegisterContent() {
             </div>
             <div className="flex items-center gap-2">
               <CheckCircle2 className="w-4 h-4 text-emerald-400 flex-shrink-0" />
-              <span>15,000+ NCERT Verified Question Bank</span>
+              <span>100% NCERT Line-by-Line Solutions</span>
             </div>
           </div>
         </div>

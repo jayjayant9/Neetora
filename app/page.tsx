@@ -166,13 +166,11 @@ export default function HomePage() {
           {/* Left Hero Content */}
           <div className="lg:col-span-7 space-y-6">
 
-            {/* 5-Star Social Proof Pill */}
-            <div className="inline-flex items-center gap-2.5 bg-[#094738]/90 border border-emerald-600/40 px-3.5 py-1.5 rounded-full text-xs font-semibold text-emerald-200 shadow-inner hover:scale-105 transition-transform duration-300">
-              <div className="flex text-amber-400 text-xs">
-                ★★★★★
-              </div>
-              <span className="font-bold text-white">5.0 Star</span>
-              <span className="text-slate-300 border-l border-emerald-700 pl-2">45,000+ NEET Aspirants</span>
+            {/* Free NEET Preparation Factual Pill */}
+            <div className="inline-flex items-center gap-2.5 bg-[#094738]/90 border border-emerald-600/40 px-3.5 py-1.5 rounded-full text-xs font-semibold text-emerald-200 shadow-inner">
+              <Sparkles className="w-3.5 h-3.5 text-amber-400 shrink-0" />
+              <span className="font-bold text-white">Free NEET Preparation</span>
+              <span className="text-slate-300 border-l border-emerald-700 pl-2">No Distractions</span>
             </div>
 
             {/* Bold Headline (from Learn@House) */}
@@ -185,6 +183,17 @@ export default function HomePage() {
             <p className="text-sm sm:text-base text-emerald-100/80 max-w-xl font-normal leading-relaxed">
               No distractions, no gimmicks. Master actual NTA Computer-Based Testing with realistic countdown timers, section-wise marking (+4, -1), automatic mistake tracker, and high-yield question papers.
             </p>
+
+            {/* Factual Highlights Banner */}
+            <div className="p-3 bg-white/5 border border-white/10 rounded-2xl text-xs text-emerald-200/90 flex flex-wrap items-center gap-x-3 gap-y-1.5 font-medium max-w-xl">
+              <span className="font-bold text-amber-400">FREE NEET Preparation</span>
+              <span className="text-emerald-500">•</span>
+              <span>180 Question CBT</span>
+              <span className="text-emerald-500">•</span>
+              <span>3 Hours Full Exam Simulation</span>
+              <span className="text-emerald-500">•</span>
+              <span>+4 / -1 Exam Pattern</span>
+            </div>
 
             {/* Hero CTAs */}
             <div className="flex flex-wrap items-center gap-4 pt-2">
@@ -205,19 +214,19 @@ export default function HomePage() {
               </Link>
             </div>
 
-            {/* Floating Metric Stats Bar (from Learn@House) */}
+            {/* Factual Metric Stats Bar */}
             <div className="pt-8 border-t border-emerald-800/60 grid grid-cols-3 gap-6 max-w-lg">
-              <div className="hover:scale-105 transition-transform duration-300">
-                <div className="text-2xl sm:text-3xl font-black text-white">720 / 720</div>
-                <div className="text-[11px] text-emerald-200/70 font-medium">NTA Standard Marking</div>
+              <div>
+                <div className="text-2xl sm:text-3xl font-black text-white font-mono">180 Qs</div>
+                <div className="text-[11px] text-emerald-200/70 font-medium">Full CBT Simulation</div>
               </div>
-              <div className="border-l border-emerald-800/80 pl-6 hover:scale-105 transition-transform duration-300">
-                <div className="text-2xl sm:text-3xl font-black text-emerald-400">15,000+</div>
-                <div className="text-[11px] text-emerald-200/70 font-medium">Verified NEET Questions</div>
+              <div className="border-l border-emerald-800/80 pl-6">
+                <div className="text-2xl sm:text-3xl font-black text-emerald-400 font-mono">3 Hours</div>
+                <div className="text-[11px] text-emerald-200/70 font-medium">Full Exam Simulation</div>
               </div>
-              <div className="border-l border-emerald-800/80 pl-6 hover:scale-105 transition-transform duration-300">
-                <div className="text-2xl sm:text-3xl font-black text-amber-400">99.4%</div>
-                <div className="text-[11px] text-emerald-200/70 font-medium">CBT Simulation Precision</div>
+              <div className="border-l border-emerald-800/80 pl-6">
+                <div className="text-2xl sm:text-3xl font-black text-amber-400 font-mono">+4 / -1</div>
+                <div className="text-[11px] text-emerald-200/70 font-medium">Exam Pattern</div>
               </div>
             </div>
 
@@ -490,7 +499,7 @@ export default function HomePage() {
             </div>
             <h3 className="text-base font-bold text-slate-900 group-hover:text-[#06382c] transition-colors">Curated NCERT Question Bank</h3>
             <p className="text-xs text-slate-500 leading-relaxed">
-              15,000+ high-yield questions strictly aligned with the latest NMC syllabus. Step-by-step KaTeX explanations and zero out-of-syllabus noise.
+              180 authentic full-syllabus questions strictly aligned with the latest NMC syllabus. Step-by-step KaTeX explanations and zero out-of-syllabus noise.
             </p>
             <a
               href="#test-knowledge"
