@@ -36,7 +36,7 @@ import { getMistakeBook } from "@/lib/data/mistake-book";
 
 const LOCAL_STORAGE_KEY = "neetora_practice_active_session";
 
-export default function PracticeModeCBTPage() {
+function PracticeContent() {
   const router = useRouter();
   const searchParams = useSearchParams();
   const mode = searchParams.get("mode");
@@ -1100,5 +1100,22 @@ export default function PracticeModeCBTPage() {
       </div>
 
     </div>
+  );
+}
+
+export default function PracticeModeCBTPage() {
+  return (
+    <React.Suspense
+      fallback={
+        <div className="min-h-screen bg-slate-100 flex items-center justify-center p-6">
+          <div className="text-center space-y-3">
+            <div className="w-8 h-8 border-4 border-emerald-600 border-t-transparent rounded-full animate-spin mx-auto" />
+            <p className="text-xs font-bold text-slate-700">Loading Practice Engine...</p>
+          </div>
+        </div>
+      }
+    >
+      <PracticeContent />
+    </React.Suspense>
   );
 }

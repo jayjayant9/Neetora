@@ -15,7 +15,7 @@ import {
   Sparkles
 } from "lucide-react";
 
-export default function StudentRegisterPage() {
+function RegisterContent() {
   const router = useRouter();
   const searchParams = useSearchParams();
   const redirectParam = searchParams.get("redirect");
@@ -298,5 +298,22 @@ export default function StudentRegisterPage() {
       </div>
 
     </div>
+  );
+}
+
+export default function StudentRegisterPage() {
+  return (
+    <React.Suspense
+      fallback={
+        <div className="min-h-screen bg-slate-100 flex items-center justify-center p-6">
+          <div className="text-center space-y-3">
+            <div className="w-8 h-8 border-4 border-emerald-600 border-t-transparent rounded-full animate-spin mx-auto" />
+            <p className="text-xs font-bold text-slate-700">Loading Registration Portal...</p>
+          </div>
+        </div>
+      }
+    >
+      <RegisterContent />
+    </React.Suspense>
   );
 }
